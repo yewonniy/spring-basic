@@ -49,6 +49,9 @@ public class Order {
         this.discountPrice = discountPrice;
     }
 
+    /**
+    *  System.out.println("order = " + order); 이렇게 객체를 출력하면 toString() 내용으로 출력됨
+     */
     @Override
     public String  toString() {
         return "Order{" +
