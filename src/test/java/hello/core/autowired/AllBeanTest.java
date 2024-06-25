@@ -19,6 +19,7 @@ public class AllBeanTest {
 
     @Test
     void findAllBean() {
+        // memoryMemberRepository의 @component 주석 없애면 댐
         ApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class, DiscountService.class);
 
         DiscountService discountService = ac.getBean(DiscountService.class);
